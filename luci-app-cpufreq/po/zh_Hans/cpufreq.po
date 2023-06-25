@@ -34,21 +34,6 @@ msgstr "CPU 切换频率触发阈值"
 msgid "Kernel make a decision on whether it should increase the frequency (%)"
 msgstr "当 CPU 占用率超过 (%) 的情况下触发内核切换频率"
 
-msgid "Devcrypto Setting"
-msgstr "加密设置"
-
-msgid "Cryptographic Hardware Accelerators"
-msgstr "硬件加解密加速"
-
-msgid "Enable devcrypto engine hardware encryption acceleration support.</br>For more information, visiting: https://openwrt.org/docs/techref/hardware/cryptographic.hardware.accelerators"
-msgstr "开启 devcrypto 引擎硬件加密加速支持，访问 https://openwrt.org/docs/techref/hardware/cryptographic.hardware.accelerators 获取更多信息。"
-
-msgid "Hardware Accelerators"
-msgstr "硬件加速"
-
-msgid "encryption test: openssl speed -elapsed -evp aes-128-cbc"
-msgstr "加密测试：openssl speed -elapsed -evp aes-128-cbc"
-
 msgid "Irqbalance"
 msgstr "中断均衡器"
 
@@ -75,3 +60,18 @@ msgstr "间隔（秒）"
 
 msgid "Ignore (ID of irq)"
 msgstr "忽略（中断ID）"
+
+msgid "Multi-Gen LRU"
+msgstr "Multi-Gen LRU"
+
+msgid "The multi-gen LRU is an alternative LRU implementation that optimizes page reclaim and improves performance under memory pressure. Page reclaim decides the kernel's caching policy and ability to overcommit memory. It directly impacts the kswapd CPU usage and RAM efficiency."
+msgstr "Multi-Gen LRU 是一种替代 LRU 实现，优化页面回收并在内存压力下提高性能，页面回收决定内核的缓存策略和超额提交内存的能力，它直接影响 kswapd CPU 使用率和 RAM 效率。"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Thrashing prevention (ms)"
+msgstr "预防颠簸（毫秒）"
+
+msgid "Set the thrashing prevention vaule to prevent the working set of N milliseconds from getting evicted. The OOM killer is triggered if this working set cannot be kept in memory. (0 means disabled, Default value 1000)"
+msgstr "设置预防颠簸值以防止 N 毫秒的工作集被驱逐，如果无法将此工作集保留在内存中，则会触发 OOM killer。（0 表示禁用，默认值 1000）"
